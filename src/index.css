@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #9dff3a;
+  --color-light: #e5e5e5;
+  --color-gray1: #999999;
+  --color-gray2: #4d4d4d;
+  --color-gray3: #2e2e2e;
+  --color-gray4: #0f0f0f;
+  --color-gray5: #ededf2;
+  --color-grayborder: #4d4d4d;
+  --color-overlay: #4a5aec;
+  --animate-marquee: marquee 35s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Alexandria", sans-serif;
+  background-color: black;
+  color: #e5e5e5;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar * {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #9dff3a !important;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9cff3a9d !important;
+}
